@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="458dp"
+        android:layout_height="793dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aylar" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="85dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="117dp"
+        android:backgroundTint="#165E3E98"
+        android:onClick="anaSayfaya"
+        app:layout_constraintBottom_toTopOf="@+id/ocak"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="84dp"
+        android:text="Önce Ay Seç! Daha sonra seçtiğin ay için planlarını yaz!  Sonuçlar sayfasında o ayın sonuçlarını yaz! "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#AC8CE6"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/subat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/ocak"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="#5D32A6"
+        android:onClick="ocak"
+        android:text="ocak"
+        app:layout_constraintBottom_toTopOf="@+id/mart"
+        app:layout_constraintEnd_toStartOf="@+id/subat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <Button
+        android:id="@+id/mart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#701DFD"
+        android:onClick="mart"
+        android:text="mart"
+        app:layout_constraintBottom_toTopOf="@+id/mayıs"
+        app:layout_constraintEnd_toStartOf="@+id/nisan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ocak" />
+
+    <Button
+        android:id="@+id/nisan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#701DFD"
+        android:onClick="nisan"
+        android:text="nisan"
+        app:layout_constraintBottom_toTopOf="@+id/haziran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mart"
+        app:layout_constraintTop_toBottomOf="@+id/subat" />
+
+    <Button
+        android:id="@+id/mayıs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="22dp"
+        android:backgroundTint="#512F8C"
+        android:onClick="mayis"
+        android:text="mayıs"
+        app:layout_constraintBottom_toTopOf="@+id/temmuz"
+        app:layout_constraintEnd_toStartOf="@+id/haziran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mart" />
+
+    <Button
+        android:id="@+id/haziran"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="22dp"
+        android:backgroundTint="#512F8C"
+        android:onClick="haziran"
+        android:text="haziran"
+        app:layout_constraintBottom_toTopOf="@+id/agustos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mayıs"
+        app:layout_constraintTop_toBottomOf="@+id/nisan" />
+
+    <Button
+        android:id="@+id/temmuz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#A6327B"
+        android:onClick="temmuz"
+        android:text="temmuz"
+        app:layout_constraintBottom_toTopOf="@+id/eylul"
+        app:layout_constraintEnd_toStartOf="@+id/agustos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mayıs" />
+
+    <Button
+        android:id="@+id/agustos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#A6327B"
+        android:onClick="agustos"
+        android:text="ağustos"
+        app:layout_constraintBottom_toTopOf="@+id/ekim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/temmuz"
+        app:layout_constraintTop_toBottomOf="@+id/haziran" />
+
+    <Button
+        android:id="@+id/eylul"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#DF497C"
+        android:onClick="eylul"
+        android:text="eylül"
+        app:layout_constraintBottom_toTopOf="@+id/kasim"
+        app:layout_constraintEnd_toStartOf="@+id/ekim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temmuz" />
+
+    <Button
+        android:id="@+id/ekim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#DF497C"
+        android:onClick="ekim"
+        android:text="ekim"
+        app:layout_constraintBottom_toTopOf="@+id/aralik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eylul"
+        app:layout_constraintTop_toBottomOf="@+id/agustos" />
+
+    <Button
+        android:id="@+id/kasim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="#A52B55"
+        android:onClick="kasim"
+        android:text="kasım"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/aralik"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eylul" />
+
+    <Button
+        android:id="@+id/aralik"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="#A52B55"
+        android:onClick="aralik"
+        android:text="aralık"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kasim"
+        app:layout_constraintTop_toBottomOf="@+id/ekim" />
+
+    <Button
+        android:id="@+id/subat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="#5D32A6"
+        android:onClick="subat"
+        android:text="şubat"
+        app:layout_constraintBottom_toTopOf="@+id/nisan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ocak"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

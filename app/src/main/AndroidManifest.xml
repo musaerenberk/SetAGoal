@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mebk.hedefle">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hedefle">
+        <activity android:name=".aralikSonuc"></activity>
+        <activity android:name=".kasimSonuc" />
+        <activity android:name=".ekimSonuc" />
+        <activity android:name=".eylulSonuc" />
+        <activity android:name=".agustosSonuc" />
+        <activity android:name=".temmuzSonuc" />
+        <activity android:name=".haziranSonuc" />
+        <activity android:name=".mayisSonuc" />
+        <activity android:name=".nisanSonuc" />
+        <activity android:name=".martSonuc" />
+        <activity android:name=".subatSonuc" />
+        <activity android:name=".ocakSonuc" />
+        <activity android:name=".aralik" />
+        <activity android:name=".kasim" />
+        <activity android:name=".ekim" />
+        <activity android:name=".eylul" />
+        <activity android:name=".agustos" />
+        <activity android:name=".temmuz" />
+        <activity android:name=".haziran" />
+        <activity android:name=".mayis" />
+        <activity android:name=".nisan" />
+        <activity android:name=".mart" />
+        <activity android:name=".subat" />
+        <activity android:name=".ocak" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
